@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./output.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav
+      id="navbar"
+      class="w-full bg-white fixed top-0 container z-50 m-auto md:hidden transition-all duration-700 ease-in-out"
+    >
+      <div class="flex justify-between p-4">
+        <h4 class="text-base font-bold">Logo</h4>
+        <img src="../icon/bars-solid.svg" alt="" />
+      </div>
+
+      <!-- //Navbar -->
+      <div class=" bg-slate-200 rounded-lg mx-4 flex-col pb-2 hidden">
+        <div class="flex justify-between p-4">
+          <h4 class="text-base font-bold">Logo</h4>
+          <img
+            src="../icon/x-solid.svg"
+            alt=""
+            width="12"
+            class="flex float-end"
+          />
+        </div>
+        <ul class="flex justify-center flex-col">
+          <li class="text-xs py-1 pl-4 hover:bg-gray-300">Home</li>
+          <li class="text-xs py-1 pl-4 hover:bg-gray-300">Tentang Kami</li>
+          <li class="text-xs py-1 pl-4 hover:bg-gray-300">Artikel</li>
+          <li class="text-xs py-1 pl-4 hover:bg-gray-300">Galeri</li>
+          <li class="text-xs py-1 pl-4 hover:bg-gray-300">Kontak</li>
+        </ul>
+      </div>
+    </nav>
+    <nav class="w-full container m-auto p-6 hidden md:block">
+      <div class="flex flex-row justify-between">
+        <h1 class="text-xl font-bold">Logo</h1>
+        <ul class="flex gap-6">
+          <li
+            class="text-base text-slate-800 hover:text-slate-900 mb-1 transition transform hover:translate-y-1"
+          >
+          <a href="#home">
+            Home
+          </a>
+          </li>
+          <li
+            class="text-base text-slate-800 hover:text-slate-900 mb-1 transition transform hover:translate-y-1"
+          ><a href="#about">
+            Tentang Kami
+          </a>
+          </li>
+          <li
+            class="text-base text-slate-800 hover:text-slate-900 mb-1 transition transform hover:translate-y-1"
+          >
+            Artikel
+          </li>
+          <li
+            class="text-base text-slate-800 hover:text-slate-900 mb-1 transition transform hover:translate-y-1"
+          >
+            Galeri
+          </li>
+          <li
+            class="text-base text-slate-800 hover:text-slate-900 mb-1 transition transform hover:translate-y-1"
+          >
+            Kontak
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <section id="home" class="w-full mt-12 md:mt-0">
+      <div
+        class="container m-auto bg-gradient-to-br from-[#1E5F35] to-[#000] w-full rounded-b-xl md:rounded-lg "
+      >
+        <div class="grid md:grid-cols-2 md:py-7 lg:py-12">
+          <div class="p-25 pl-4 h-60 my-auto ml-4 md:ml-18 lg:ml-20 h-99">
+            <h1
+              class="text-2xl text-white md:text-4xl lg:text-5xl font-extrabold"
+            >
+              Layanan Umroh <br />
+              Tegal
+            </h1>
+            <p
+              class="text-xs md:text-base lg:text-xl text-white mt-1 md:mt-2 xl:mt-3"
+            >
+              Perizinan resmi kemenag
+            </p>
+            <p
+              class="text-[9px] pr-12 md:text-sm lg:text-base text-white mt-1 md:mt-2 xl:mt-3"
+            >
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi
+              nostrum rem accusantium, magnam ad atque.
+            </p>
+            <button
+              class="py-1 px-2 md:py-1.5 md:px-3 lg:py-1 lg:px-3 bg-[#F07925] hover:bg[#f39654] text-white rounded text-[10px] md:text-sm lg:text-base font-semibold mt-2 md:mt-4 lg:mt-6"
+            >
+              Hubungi Kami
+            </button>
+          </div>
+          <div class="hero p-3 py-12 order-first md:order-1 md:p-10">
+            <img src="../icon/kabah.png" alt="" />
+          </div>
+        </div>
+        <div class="flex"></div>
+      </div>
+    </section>
+    <section id="about">
+      <div class="container m-auto">
+        <div
+          class="flex md:mx-6 justify-between mx-4 my-3 lg:my-4 align-center"
+        >
+          <p
+            class="text-xs my-auto md:text-base lg:text-xl text-green-800 font-bold"
+          >
+            Paket Umroh
+          </p>
+          <button
+            class="p-1 md:p-1.5 lg:p-2 md:px-3 xl:px-4 bg-gradient-to-br rounded text-[9px] md:sm xl:text-base text-white px-2 from-[#1E5F35] to-black"
+          >
+            Lihat Semua Paket
+          </button>
+        </div>
+        <div class="grid md:grid-cols-3 mt-20 gap-y-20">
+          <div class="card bg-[#FEE4D1] m-4 p-4 rounded-lg relative">
+            <div
+              class="relative -top-20 left-1/2 transform -translate-x-1/2 z-20 -top-35 brosur rounded overflow-hidden"
+            >
+              <img
+                src="../img/brosur.png"
+                alt=""
+                class="rounded-lg m-auto object-cover aspect-squarel"
+              />
+            </div>
+            <div class="relative -translate-y-1/4">
+              <div class="title h-12 md:h-14 lg:h-16">
+                <h6
+                  class="text-sm md:text-sm lg:text-xl uppercase m-0 font-bold text-red-500"
+                >
+                  Umroh Awal Ramadhan hk uhjuh
+                </h6>
+              </div>
+              <div class="desc h-20 md:h-23 lg:h-25">
+                <p class="text-xs md:text-sm lg:text-base">
+                  Program : <span class="font-bold">10 Hari</span>
+                </p>
+                <p class="text-xs md:text-sm lg:text-base">
+                  Keberangkatan : <br />
+                  <span class="font-bold">10 januari $ 15 januari 2024</span>
+                </p>
+              </div>
+              <div class="desc h-20 md:h-23 lg:h-25">
+                <p class="text-xs md:text-sm lg:text-base">
+                  Berangkat dari : <span class="font-bold">Tegal</span>
+                </p>
+                <p class="text-xs md:text-sm lg:text-base">
+                  Maskapai : <span class="font-bold">Garuda</span>
+                </p>
+                <p class="text-xs md:text-sm lg:text-base">
+                  Harga : <span class="font-bold">35.000.000,-</span>
+                </p>
+              </div>
+              <div class="btn -mb-16 mb-1">
+                <button
+                  class="p-1 md:p-1.5 lg:p-2 md:px-3 xl:px-4 bg-gradient-to-br rounded text-[9px] md:sm xl:text-base text-white px-2 from-[#E15E06] to-[#F9903E]"
+                >
+                  Lihat Selengkapnya
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="card bg-[#FEE4D1] m-4 p-4 rounded-lg relative">
+            <div
+              class="relative -top-20 left-1/2 transform -translate-x-1/2 z-20 -top-35 brosur rounded overflow-hidden"
+            >
+              <img
+                src="../img/brosur.png"
+                alt=""
+                class="rounded-lg m-auto object-cover aspect-squarel"
+              />
+            </div>
+            <div class="relative -translate-y-1/4">
+              <div class="title h-12 md:h-14 lg:h-16">
+                <h6
+                  class="text-sm md:text-sm lg:text-xl uppercase m-0 font-bold text-red-500"
+                >
+                  Umroh Awal Ramadhan hk uhjuh
+                </h6>
+              </div>
+              <div class="desc h-20 md:h-23 lg:h-25">
+                <p class="text-xs md:text-sm lg:text-base">
+                  Program : <span class="font-bold">10 Hari</span>
+                </p>
+                <p class="text-xs md:text-sm lg:text-base">
+                  Keberangkatan : <br />
+                  <span class="font-bold">10 januari $ 15 januari 2024</span>
+                </p>
+              </div>
+              <div class="desc h-20 md:h-23 lg:h-25">
+                <p class="text-xs md:text-sm lg:text-base">
+                  Berangkat dari : <span class="font-bold">Tegal</span>
+                </p>
+                <p class="text-xs md:text-sm lg:text-base">
+                  Maskapai : <span class="font-bold">Garuda</span>
+                </p>
+                <p class="text-xs md:text-sm lg:text-base">
+                  Harga : <span class="font-bold">35.000.000,-</span>
+                </p>
+              </div>
+              <div class="btn -mb-16 mb-1">
+                <button
+                  class="p-1 md:p-1.5 lg:p-2 md:px-3 xl:px-4 bg-gradient-to-br rounded text-[9px] md:sm xl:text-base text-white px-2 from-[#E15E06] to-[#F9903E]"
+                >
+                  Lihat Selengkapnya
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="card bg-[#FEE4D1] m-4 p-4 rounded-lg relative">
+            <div
+              class="relative -top-20 left-1/2 transform -translate-x-1/2 z-20 -top-35 brosur rounded overflow-hidden"
+            >
+              <img
+                src="../img/brosur.png"
+                alt=""
+                class="rounded-lg m-auto object-cover aspect-squarel"
+              />
+            </div>
+            <div class="relative -translate-y-1/4">
+              <div class="title h-12 md:h-14 lg:h-16">
+                <h6
+                  class="text-sm md:text-sm lg:text-xl uppercase m-0 font-bold text-red-500"
+                >
+                  Umroh Awal Ramadhan hk uhjuh
+                </h6>
+              </div>
+              <div class="desc h-20 md:h-23 lg:h-25">
+                <p class="text-xs md:text-sm lg:text-base">
+                  Program : <span class="font-bold">10 Hari</span>
+                </p>
+                <p class="text-xs md:text-sm lg:text-base">
+                  Keberangkatan : <br />
+                  <span class="font-bold">10 januari $ 15 januari 2024</span>
+                </p>
+              </div>
+              <div class="desc h-20 md:h-23 lg:h-25">
+                <p class="text-xs md:text-sm lg:text-base">
+                  Berangkat dari : <span class="font-bold">Tegal</span>
+                </p>
+                <p class="text-xs md:text-sm lg:text-base">
+                  Maskapai : <span class="font-bold">Garuda</span>
+                </p>
+                <p class="text-xs md:text-sm lg:text-base">
+                  Harga : <span class="font-bold">35.000.000,-</span>
+                </p>
+              </div>
+              <div class="btn -mb-16 mb-1">
+                <button
+                  class="p-1 md:p-1.5 lg:p-2 md:px-3 xl:px-4 bg-gradient-to-br rounded text-[9px] md:sm xl:text-base text-white px-2 from-[#E15E06] to-[#F9903E]"
+                >
+                  Lihat Selengkapnya
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="container m-auto">
+        <div
+          class="flex md:mx-5 flex-col mx-3 my-3 4g:mx-0 lg:my-4 align-center"
+        >
+          <p
+            class="text-xs text-center md:text-left my-auto md:text-base lg:text-xl text-green-800 font-bold"
+          >
+            Mengapa Memilih Kami ?
+          </p>
+          <p
+            class="text-[10px] text-center md:text-left md:text-sm lg:text-base px-3 md:px-0 text-gray-600"
+          >
+            Memberikan pelayanan terbaik sehingga umroh anda insyallah lebih
+            Aman, Khusyu, Dan Menyenangkan
+          </p>
+        </div>
+        <div class="grid md:grid-cols-3">
+          <div
+            class="card bg-gradient-to-br from-[#E15E06] to-[#F9903E] rounded-lg p-10 md:p-10 lg:p-14 m-4"
+          >
+            <div class="icon text-white text-cente mb-3">
+              <img src="../icon/world.png" class="w-10 m-auto" alt="" />
+            </div>
+            <h6
+              class="text-sm mb-3 text-white md:text-base lg:text-xl font-semibold text-center"
+            >
+              Memiliki Izin
+            </h6>
+            <p class="text-xs text-white md:text-sm lg:text-base text-center">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et,
+              tempora.
+            </p>
+          </div>
+          <div
+            class="card bg-gradient-to-br from-[#E15E06] to-[#F9903E] rounded-lg p-10 md:p-12 lg:p-14 m-4"
+          >
+            <div class="icon text-white text-cente mb-3">
+              <img src="../icon/world.png" class="w-10 m-auto" alt="" />
+            </div>
+            <h6
+              class="text-sm mb-3 text-white md:text-base lg:text-xl font-semibold text-center"
+            >
+              Memiliki Izin
+            </h6>
+            <p class="text-xs text-white md:text-sm lg:text-base text-center">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et,
+              tempora.
+            </p>
+          </div>
+          <div
+            class="card bg-gradient-to-br from-[#E15E06] to-[#F9903E] rounded-lg p-10 md:p-12 lg:p-14 m-4"
+          >
+            <div class="icon text-white text-cente mb-3">
+              <img src="../icon/world.png" class="w-10 m-auto" alt="" />
+            </div>
+            <h6
+              class="text-sm mb-3 text-white md:text-base lg:text-xl font-semibold text-center"
+            >
+              Memiliki Izin
+            </h6>
+            <p class="text-xs text-white md:text-sm lg:text-base text-center">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et,
+              tempora.
+            </p>
+          </div>
+          <div
+            class="card bg-gradient-to-br from-[#E15E06] to-[#F9903E] rounded-lg p-10 md:p-12 lg:p-14 m-4"
+          >
+            <div class="icon text-white text-cente mb-3">
+              <img src="../icon/world.png" class="w-10 m-auto" alt="" />
+            </div>
+            <h6
+              class="text-sm mb-3 text-white md:text-base lg:text-xl font-semibold text-center"
+            >
+              Memiliki Izin
+            </h6>
+            <p class="text-xs text-white md:text-sm lg:text-base text-center">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et,
+              tempora.
+            </p>
+          </div>
+          <div
+            class="card bg-gradient-to-br from-[#E15E06] to-[#F9903E] rounded-lg p-10 md:p-12 lg:p-14 m-4"
+          >
+            <div class="icon text-white text-cente mb-3">
+              <img src="../icon/world.png" class="w-10 m-auto" alt="" />
+            </div>
+            <h6
+              class="text-sm mb-3 text-white md:text-base lg:text-xl font-semibold text-center"
+            >
+              Memiliki Izin
+            </h6>
+            <p class="text-xs text-white md:text-sm lg:text-base text-center">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et,
+              tempora.
+            </p>
+          </div>
+          <div
+            class="card bg-gradient-to-br from-[#E15E06] to-[#F9903E] rounded-lg p-10 md:p-12 lg:p-14 m-4"
+          >
+            <div class="icon text-white text-cente mb-3">
+              <img src="../icon/world.png" class="w-10 m-auto" alt="" />
+            </div>
+            <h6
+              class="text-sm mb-3 text-white md:text-base lg:text-xl font-semibold text-center"
+            >
+              Memiliki Izin
+            </h6>
+            <p class="text-xs text-white md:text-sm lg:text-base text-center">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et,
+              tempora.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="container m-auto">
+        <div
+          class="flex md:mx-5 text-center md:text-left flex-col mx-3 my-3 4g:mx-0 lg:my-4 align-center"
+        >
+          <p
+            class="text-xs my-auto md:text-base lg:text-xl text-green-800 font-bold"
+          >
+            Apa yang mereka katakan?
+          </p>
+          <p class="text-[10px] md:text-sm lg:text-base pr-10 text-gray-600">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit
+            tenetur et possimus doloremque temporibus fugit incidunt? Tempora
+            beatae temporibus vel!
+          </p>
+        </div>
+      </div>
+    </section>
+    <footer class="w-full">
+      <div
+        class="container mx-auto bg-gradient-to-br from-[#1E5F35] to-[#000] w-full rounded-t-xl md:rounded-t-lg"
+      >
+        <div class="grid md:grid-cols-2 p-5 md:p-10 lg:p-15">
+          <h6 class="text-xs md:text-base lg:text-xl text-white font-bold my-auto mb-3 md:mb-0 text-center md:text-left">
+            Segera Amankan Seat Anda Sekarang!
+          </h6>
+          <div class="flex justify-center md:justify-end gap-3 align-center">
+            <button
+              class="py-1 px-2 md:py-1.5 md:px-3 lg:py-1 lg:px-3 bg-[#F07925] hover:bg[#f39654] text-white rounded text-[10px] md:text-sm lg:text-base font-semibold"
+            >
+              Hubungi Kami
+            </button>
+            <h6 class="text-xs text-center my-auto md:text-base lg:text-xl text-white font-bold">
+              0857 2767 2415
+            </h6>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script>
+      window.onscroll = function () {
+        scrollFunction();
+      };
+
+      function scrollFunction() {
+        var navbar = document.getElementById("navbar");
+
+        // Jika pengguna melakukan scroll, tambahkan atau hapus kelas "fixed"
+        if (
+          document.body.scrollTop > 20 ||
+          document.documentElement.scrollTop > 90
+        ) {
+          navbar.classList.add(
+            "bg-white",
+            "bg-opacity-80",
+            "backdrop-blur-5",
+            "backdrop-filter",
+            "backdrop-blur-md",
+            "shadow-md",
+            "transition-all",
+            "duration-700",
+            "ease-in-out"
+          );
+        } else {
+          navbar.classList.remove( 
+            "bg-opacity-80",
+            "backdrop-blur-5",
+            "backdrop-filter",
+            "backdrop-blur-md",
+            "shadow-md",
+            "transition-all",
+            "duration-700",
+            "ease-in-out");
+        }
+      }
+    </script>
+  </body>
+</html>
